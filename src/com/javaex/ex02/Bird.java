@@ -11,11 +11,13 @@ public abstract class Bird {
 	}
 
 	// 메소드 g/s
-	public String getName() {
+	protected String getName() { // 상속관계에서만 이름을 읽을 수 있는 getName()
 		return name;
 	}
 	
-	public abstract String setName(String name);  
+	public void setName(String name) { // 부모 클래스의 메소드 사용 예정
+		this.name = name;
+	} 
 	
 	// 메소드 일반
 	public abstract void sing();

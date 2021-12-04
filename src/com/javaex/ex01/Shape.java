@@ -1,6 +1,6 @@
 package com.javaex.ex01;
 
-public class Shape { // abstract일 떄는 객체화 불가
+public abstract class Shape { 
 
 	// 필드
 	protected String fillColor;
@@ -11,8 +11,6 @@ public class Shape { // abstract일 떄는 객체화 불가
 	}
 
 	// 메소드
-	public void draw() {
-		//
-	}
+	public abstract void draw();
 	
 }
